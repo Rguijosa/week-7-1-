@@ -1,4 +1,8 @@
-def loops():
+def loops_1():
+  # a =1
+  # while a < 10:
+  #   print(a)
+  # infinite loops
   
   ###################################loops intro######################################
   # queue videos
@@ -11,7 +15,10 @@ def loops():
   
   # For example: "Hello Norville"
   
-  students = ["Norville", "Fred", "Velma", "Daphne"]
+  # students = ["Norville", "Fred", "Velma", "Daphne"]
+
+  # for student in students:
+  #   print(f"hello {student}")
   
   
   
@@ -20,7 +27,11 @@ def loops():
   # Given the following list of numbers, calculate the sum of all the numbers using For loops and store the result of the sum in a variable called sum_numbers:
   
   list_numbers = [1,5,8,7,6,8,2,5,2,6,4,8,5,9,8,3,5,4,2,5,6,4]
-  # sum_numbers = 
+  sum_numbers = 0
+  for number in list_numbers:
+  # sum_numbers = sum_numbers + number
+    sum_numbers += number
+    print(sum_numbers)
   
   
   
@@ -37,8 +48,18 @@ def loops():
   
   # num % 2 == 1 (odd values)
   
+  
   list_numbers = [1,5,8,7,6,8,2,5,2,6,4,8,5,9,8,3,5,4,2,5,6,4]
   
-  # sum_even = 
+  sum_even = 0
   
-  # sum_odd = 
+  sum_odd = 0
+
+  for number in list_numbers:
+    if number % 2 == 0:
+      sum_even = sum_even + number
+      print(f"evens are {sum_even}")
+    else:
+      sum_odd = sum_odd + number
+      print(f"odds are {sum_odd}")
+
